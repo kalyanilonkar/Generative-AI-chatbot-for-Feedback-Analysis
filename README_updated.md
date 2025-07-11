@@ -5,21 +5,21 @@ This project builds a **Generative AI-powered chatbot** that helps instructors a
 
 ---
 
-## 🚀 Features
+##  Features
 
-✅ Sentiment analysis using Hugging Face Transformers (BERT for 1-5 star ratings)  
-✅ Exploratory Data Analysis (EDA) and feature engineering (TF-IDF, text stats, keyword flags)  
-✅ Traditional ML models (Random Forest, Logistic Regression) for benchmark classification  
-✅ Integration with LLMs (Mistral-7B, Falcon-7B) for answering instructor questions like:
+1 Sentiment analysis using Hugging Face Transformers (BERT for 1-5 star ratings)  
+2 Exploratory Data Analysis (EDA) and feature engineering (TF-IDF, text stats, keyword flags)  
+3 Traditional ML models (Random Forest, Logistic Regression) for benchmark classification  
+4 Integration with LLMs (Mistral-7B, Falcon-7B) for answering instructor questions like:
 - *“Why were students confused?”*
 - *“What can be improved in the next session?”*
 
-✅ Power BI dashboards auto-refreshed via OneDrive CSV for real-time sentiment and feedback visualization  
-✅ Streamlit chatbot UI enabling instructors to interactively explore feedback insights
+5 Power BI dashboards auto-refreshed via OneDrive CSV for real-time sentiment and feedback visualization  
+6 Streamlit chatbot UI enabling instructors to interactively explore feedback insights
 
 ---
 
-## 🔍 Tech Stack
+##  Tech Stack
 
 - **Python** (pandas, sklearn, matplotlib, seaborn, nltk, regex)
 - **Hugging Face Transformers** for LLM-based sentiment and QA (Mistral, Falcon)
@@ -29,7 +29,7 @@ This project builds a **Generative AI-powered chatbot** that helps instructors a
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 data/               # Sample student feedback CSVs
@@ -44,13 +44,13 @@ dashboards/
 
 ---
 
-## 🖼️ Demo Screenshots
+##  Demo Screenshots
 
 <img src="app/assets/dashboard.png" width="450">
 
 ---
 
-## 🚀 Example: Using Mistral LLM in Google Colab
+##  Example: Using Mistral LLM in Google Colab
 
 We used the free Google Colab GPU environment to run open-source local LLMs like **Mistral-7B** for generative feedback analysis.
 
@@ -74,34 +74,34 @@ outputs = model.generate(**inputs, max_new_tokens=100)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 
-✅ This allows asking open-ended questions on student feedback — replacing traditional models with **generative reasoning** to identify confusion areas, engagement issues, or improvement points.
+--->> This allows asking open-ended questions on student feedback — replacing traditional models with **generative reasoning** to identify confusion areas, engagement issues, or improvement points.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-1️⃣ Clone this repository
+1] Clone this repository
 ```bash
 git clone https://github.com/yourusername/genai-student-feedback-chatbot.git
 cd genai-student-feedback-chatbot
 ```
 
-2️⃣ Install dependencies
+2] Install dependencies
 ```bash
 pip install -r app/requirements.txt
 ```
 
-3️⃣ Run Streamlit app
+3] Run Streamlit app
 ```bash
 cd app
 streamlit run chatbot_streamlit.py
 ```
 
-4️⃣ Open Power BI and connect to `powerbi_output.csv` for live dashboards.
+4] Open Power BI and connect to `powerbi_output.csv` for live dashboards.
 
 ---
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
 - Fine-tune LLM on domain-specific instructor feedback  
 - Incorporate multilingual support for global classrooms  
@@ -109,13 +109,13 @@ streamlit run chatbot_streamlit.py
 
 ---
 
-## 📝 License
+##  License
 
 [MIT License](LICENSE)
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Kalyani Lonkar**  
 🎓 MSc Business Analytics | University of Manchester  
@@ -123,7 +123,7 @@ streamlit run chatbot_streamlit.py
 
 ---
 
-## ⭐ Acknowledgements
+##  Acknowledgements
 
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
 - [Streamlit](https://streamlit.io)
