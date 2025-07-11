@@ -7,17 +7,28 @@ This project builds a **Generative AI-powered chatbot** that helps instructors a
 
 ##  Features
 
-1 Sentiment analysis using Hugging Face Transformers (BERT for 1-5 star ratings)  
-2 Exploratory Data Analysis (EDA) and feature engineering (TF-IDF, text stats, keyword flags)  
-3 Traditional ML models (Random Forest, Logistic Regression) for benchmark classification  
-4 Integration with LLMs (Mistral-7B, Falcon-7B) for answering instructor questions like:
-- *“Why were students confused?”*
-- *“What can be improved in the next session?”*
+**Sentiment Classification:** Classifies student comments into 1–5 star ratings using:
 
-5 Power BI dashboards auto-refreshed via OneDrive CSV for real-time sentiment and feedback visualization  
-6 Streamlit chatbot UI enabling instructors to interactively explore feedback insights
+**Traditional ML models (Random Forest, Logistic Regression)
+Pretrained BERT sentiment model (nlptown/bert-base-multilingual-uncased)**
 
----
+**Generative Q&A:** Uses local Mistral LLM to answer questions like:
+
+“Why were students confused?”
+“What improvements can be made?”
+“Which topics were students most confident about?”
+Power BI Dashboards: Automatically saves processed data to CSV, enabling dashboards that visualize:
+Sentiment trends
+Session-wise performance
+Common areas of confusion
+
+**Streamlit Chatbot** UI: Lets instructors chat with the system and receive data-backed responses.
+
+**Project Goal**
+To help instructors derive actionable insights from feedback, by experimenting with and comparing:
+Traditional ML sentiment models (which excel at quick classification & quant metrics)
+LLM-based reasoning (which excel at generating explanations & qualitative insights)
+
 
 ##  Tech Stack
 
