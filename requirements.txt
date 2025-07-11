@@ -1,0 +1,11 @@
+
+streamlit
+pandas
+requests
+matplotlib
+seaborn
+nltk
+transformers
+torch
+scikit-learn
+wordcloud
